@@ -1,0 +1,831 @@
+
+
+*{
+    padding:0;
+    margin:0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+ 
+nav{
+  box-sizing: border-box;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #b5c964;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #030000;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #030000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover
+{
+    color: rgb(253, 7, 7);
+}
+
+nav .menu-btn i{
+  color: #090303;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media screen and (max-width:40px)
+{
+  nav{
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    width: 110%;
+    background: #b5c964;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  nav .logo{
+    color: #030000;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #030000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a:hover
+  {
+      color: rgb(253, 7, 7);
+  }
+  
+  nav .menu-btn i{
+    color: #090303;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+
+
+.sec1{
+   
+    background-image: url('/images/first.jpg');
+    height: 600px !important;
+    background-size: cover !important;
+    width: 100%;
+    
+}
+@media screen and (max-width:450px) {
+
+  .sec1{
+   
+    background-image: url('/images/first.jpg');
+    height:100vh;
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec2
+{
+   
+    font-size: 60px;
+    margin-left: 320px;
+    margin-top: 230px;
+    color:white
+}
+.sec3
+{
+    position: relative;
+    left:320px;
+    top:200px;
+}
+  
+}
+.sec2
+{
+   
+    font-size: 60px;
+    margin-left: 320px;
+    margin-top: 230px;
+    color:white
+}
+.sec3
+{
+    position: relative;
+    left:320px;
+    top:200px;
+}
+@media screen and (max-width:400px)
+{
+
+  .sec1{
+   
+    background-image: url('/images/first.jpg');
+    height:100vh;
+    width: 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec2
+{
+   
+    font-size: 60px;
+    margin-left: 320px;
+    margin-top: 230px;
+    color:white
+}
+.sec3
+{
+    position: relative;
+    left:320px;
+    top:200px;
+}
+nav{
+  box-sizing: border-box;
+  display: flex;
+  height: 80px;
+  width: 110%;
+  background: #b5c964;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #030000;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #030000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover
+{
+    color: rgb(253, 7, 7);
+}
+
+nav .menu-btn i{
+  color: #090303;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+}
+@media screen and  (max-width:450px)
+ {
+    .sec3
+    {
+        position: relative;
+        left:30px;
+        top:200px; 
+
+}
+.sec2
+{
+    position:relative;
+    font-size: 55px;
+    margin-left: -5px;
+    margin-top: 10px;
+    color:white
+}
+ }
+ @media screen and (max-width:500px)
+ {
+    .sec3
+    {
+        position: relative;
+        left:30px;
+        top:200px; 
+
+}
+.sec2
+{
+    position:relative;
+    font-size: 55px;
+    left:30px;
+    top:210px;
+    color:white
+}
+nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+ }
+ .con
+ {
+    position: relative;
+    left:1200px;
+    top:-490px;
+    background-color: rgba(210, 219, 219, 0.829);
+    width:230px;
+    height: 490px;
+    text-align: center;
+}
+div ul
+{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+ }
+  div li a
+ {
+    position: relative;
+    top: 100px;
+    color:black;
+    font-size: 30px;
+    
+    
+ }
+ .flexbox {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  column-gap: 20px;
+}
+
+.flexbox > div {
+  border: 1px solid green;
+  background-color: lime;
+  flex: 200px;
+}
+div:nth-of-type(3n) {
+  flex: 300px;
+}
+.third
+{
+  background-color:white;
+   /* border: 8px solid #322d2da7; */
+   box-shadow: 5px 5px 18px 18px;
+   border-width: 8px;
+   opacity: 30px;
+  width:300px;
+  height:490px;
+  border-radius: 15px;
+  margin-top:100px;
+
+}
+.third ul
+{
+    position: relative;
+     top:-100px;
+    list-style-type: none;
+    padding: 20px;
+    margin: 40px;
+    display: grid;
+  gap: 15px;
+    
+}
+.third li a{
+  /* justify-content: space-between; */
+  text-decoration: none;
+
+}
+.second 
+{
+  position:relative;
+  margin-left: 10px;
+  
+}
+@media screen and (max-width:780px)
+{
+
+  .second 
+{
+  position:relative;
+  margin-left: 130px;
+  
+}
+.third
+{
+  background-color:white;
+   border: 8px solid #000000b7;
+   border-width: 8px;
+  width:100px;
+  height:450px;
+  border-radius: 15px;
+
+}
+.third ul
+{
+    position: relative;
+     top:-140px;
+    list-style-type: none;
+    /* padding: 20px;
+    margin: 20px; */
+    display: grid;
+  gap: 20px;
+    
+}
+.third li a{
+  /* justify-content: space-between; */
+  text-decoration: none;
+
+}
+}
+
+
+.black
+{
+  background-image: url("/images/second.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(70, 57, 57, 0.39);
+  height: 600px;
+  margin: 30px;
+  margin-top:100px;
+  margin-bottom: 250px;
+}
+@media screen and (max-width:440px)
+{
+  .black
+{
+  background-image: url("/images/second.jpg");
+  background-size:cover;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(70, 57, 57, 0.39);
+  height: 600px;
+  margin: 30px;
+}
+}
+@media screen and (max-width:330px)
+{
+  .black
+{
+  background-image: url("/images/second.jpg");
+  background-size:cover;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(70, 57, 57, 0.39);
+  height: 600px;
+  width:270px;
+  margin: 30px;
+  /* margin-top: 600px; */
+}
+}
+.gray {
+  background-image: url("/images/third.jpg");
+   background-size: cover;
+  z-index: 3;
+  height: 400px;  
+  width: 70%;
+  margin-left: 220px;
+  margin-top: 300px;
+}
+.green {
+  /* position: absolute; */
+  z-index: 2; /* green box will be above black box */
+  /* background-image: url("/images/first.jpg"); */
+  border:2px solid rgb(247, 244, 244);
+  /* box-shadow: 3px 3px 10px 10px; */
+  border-radius: 10px;
+  width: 40%;
+  margin-left: 440px;
+  margin-top:50px;
+  margin-bottom: 300px;
+  height: 200px;
+}
+@media screen and (max-width:350px)
+{
+  .green {
+    /* position: absolute; */
+    z-index: 2; /* green box will be above black box */
+    /* background-image: url("/images/first.jpg"); */
+    border:2px solid rgb(247, 244, 244);
+    /* box-shadow: 3px 3px 10px 10px; */
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 440px;
+    margin-top:500px;
+    margin-top: -0px !important;
+    height: 200px;
+  }
+}
+@media screen and (max-width:450px)
+{
+  .green  {
+    position: absolute;
+    z-index: 2;
+    border:2px solid rgb(247, 244, 244);
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 70px;
+    /* margin-top: 300px; */
+    height: 400px;
+  }
+}
+@media screen and (max-width:780px) and (min-width:600px)
+{
+  .green {
+    position: absolute;
+    z-index: 2; /* green box will be above black box */
+    /* background-image: url("/images/first.jpg"); */
+    border:2px solid rgb(247, 244, 244);
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 150px;
+    /* margin-top: 300px; */
+    height: 400px;
+  }
+}
+
+.word
+{
+  margin-left: 650px;
+  margin-top: 100px;
+}
+.word1
+{
+  margin-left:600px;
+  font-size: px;
+}
+@media screen and (max-width:500px) and (min-width:300px)
+{
+  .word
+{
+  margin-left: 60px;
+  margin-top: 100px;
+}
+.word1
+{
+  margin-left:60px;
+  font-size: px;
+}
+}
+@media screen and (max-width:1050px) and (min-width:700px)
+{
+
+  .word
+{
+  margin-left: 200px;
+  margin-top: 100px;
+}
+.word1
+{
+  margin-left:200px;
+  font-size: px;
+}
+}
+.one
+{
+  background-color:rgba(243, 115, 36, 0.147);
+  margin-left: 40px;
+  height: 100px;
+  border-radius: 30px;
+  padding-left: 70px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 5px;
+  border-color: coral;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+.letter
+{
+  margin-bottom: 100px;
+}
+.pic {
+  background-color: rgba(250, 235, 215, 0.675);
+  height:600px;
+  width:100%;
+  margin-bottom: 200px;
+}
+@media screen and (max-width:350px)
+{
+ .pic {
+  background-color: rgba(250, 235, 215, 0.675);
+  height:600px;
+  width:100%;
+  margin-bottom: 200px;
+} 
+}
+.box
+{
+  background-color: aliceblue;
+  width:350px;
+  height:380px;
+  margin-left: 30px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px 5px;
+}
+.color
+{
+  align-items: center;
+  margin-top: 100px;
+}
+.image
+{
+  align-items: center;
+  margin-top: 100px;
+}
+.para
+{
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 300px;
+
+} 
+.nit
+{
+  position:center;
+  margin-bottom: 150px;
+  
+}
+@media screen and (max-width:500px)
+{
+  .nit
+{
+  margin-top: 950px;
+  margin-left:1000px;
+}
+}
+@media screen and (max-width:1030px)
+{
+  .nit
+{
+  
+  margin-left: 300px;
+}
+}
+.hash
+{
+  margin-bottom: 100px;
+  background-color: rgba(255, 166, 0, 0.047);
+  border-radius: 10px;
+}
+.but {
+  background-color: black;
+  color:white;
+  padding: 10px 10px 10px 15px;
+  border-radius: 30px;
+}
+
+.but:hover {
+  background-color:rgb(244, 107, 9);
+  color: white;
+}
+.black1
+{
+  background-image: url('/images/banner.jpg');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(70, 57, 57, 0.39);
+  height: 600px;
+  margin: 30px;
+  margin-top:100px;
+  margin-bottom: 250px;
+}
+.green1
+{
+  
+  /* z-index: 2; */
+  border:2px solid rgb(247, 244, 244);
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 100px;
+  margin-top:50px;
+  margin-bottom: 300px;
+  height: 200px;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto;background-color: rgba(226, 225, 223, 0.867); }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #0e0101d4;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #e77c247d; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#020000b2;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:rgb(244, 107, 9) }
+
+.blue
+{
+  margin-left: 900px;
+  margin-top: -500px;
+}
+
+@media screen and (max-width:1030px) and (min-width:700px)
+{
+  .blue
+{
+  margin-left: 470px;
+  margin-top: -500px;
+}
+}
+@media screen and (max-width:500px)
+{
+  .blue
+{
+  margin-left: 100px;
+  margin-top: -250px;
+}
+}
+.foot
+{
+  background-color: #030000;
+  height:100px;
+  color:white;
+  align-items: center;
+  padding: 40px 50px 45px 250px;
+
+}
+
+@media screen and (max-width:500px) {
+
+  .foot
+{
+  background-color: #030000;
+  height:500px;
+  color:white;
+  align-items: center;
+  padding: 150px 20px 15px 80px;
+  margin-bottom: 600px;
+  margin-top: 500px;
+
+}
+
+}
